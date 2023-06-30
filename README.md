@@ -1,3 +1,17 @@
+//Question - 
+You're required to build a basic 'Development-stage' Figma plugin that if I click on a "Frame" it can be exported to a HTML/CSS zip that runs on it. Absolute positioning, no kind of responsiveness required. Auto-layout restriction also allowed. 
+
+//Solution 
+The React JS part of code could be found in this repo.
+For Further Procedure
+
+1. Open Figma and go to the "Plugins" menu.
+2. Choose "Development" > "New Plugin" > "Link existing plugin..."
+3. Select the manifest.json file located in the build directory of your project.
+4. Test your plugin by selecting a frame in Figma. The selected frame's name will be displayed, and you can click the "Export Frame" button to generate an HTML/CSS zip file.
+
+This example uses the html2canvas library to capture the frame as an image and jszip library to create the zip file. The exported HTML file contains the image as the background of an absolutely positioned div within a minimal HTML structure.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
