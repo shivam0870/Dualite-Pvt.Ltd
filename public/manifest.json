@@ -1,0 +1,21 @@
+{
+  "name": "Figma Plugin",
+  "id": "com.example.figma-plugin",
+  "api": "1.0.0",
+  "main": "index.html",
+  "ui": "ui.html",
+  "permissions": ["figmaPluginData"],
+  "menu": [
+    {
+      "name": "Export Frame",
+      "command": "export-frame",
+      "shortcut": "Ctrl+Shift+E"
+    }
+  ],
+  "createMenuItems": [
+    { "name": "Export Frame", "action": { "type": "command", "commandId": "export-frame" } }
+  ],
+  "description": "A Figma plugin for exporting frames to HTML/CSS",
+  "author": "Your Name",
+  "license": "MIT"
+}
